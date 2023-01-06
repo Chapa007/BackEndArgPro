@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "https://argprograma-93cad.web.app")
+@CrossOrigin(origins = "https://argprograma-93cad.web.app/")
 public class PersonaController {
     @Autowired IPersonaService IpersonaService;
     
@@ -58,7 +58,7 @@ public Persona editPersona(@PathVariable Long id,
     return persona;
 }
 
-@GetMapping("/personas/traer/perfil")
+@GetMapping("personas/traer/perfil")
 public Persona findPersona(){
     return IpersonaService.findPersona((long)4);
 }
