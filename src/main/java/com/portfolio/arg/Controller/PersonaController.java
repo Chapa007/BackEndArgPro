@@ -28,7 +28,7 @@ public class PersonaController {
         return IpersonaService.getPersona();
     }
     
-@PreAuthorize("hasRole('ADMIN')")
+//@PreAuthorize("hasRole('ADMIN')")
 @PostMapping("/personas/crear")
 public String createPersona(@RequestBody Persona persona){
     IpersonaService.savePersona(persona);
