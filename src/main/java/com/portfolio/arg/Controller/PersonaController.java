@@ -23,7 +23,7 @@ public class PersonaController {
     @Autowired IPersonaService IpersonaService;
     
     
-@GetMapping("personas/traer")
+@GetMapping("/personas/traer")
     public List<Persona> getPersona(){
         return IpersonaService.getPersona();
     }
@@ -35,14 +35,14 @@ public String createPersona(@RequestBody Persona persona){
     return "La persona se creo correctamente";
 }
 
-@PreAuthorize("hasRole('ADMIN')")
+@PreAuthorize("/hasRole('ADMIN')")
 @DeleteMapping("/personas/borrar/{id}")
 public String deletePersona(@PathVariable Long id){
     IpersonaService.deletePersona(id);
     return "La Persona se elimino correctamente";
 }
 
-@PreAuthorize("hasRole('ADMIN')")
+@PreAuthorize("/hasRole('ADMIN')")
 @PutMapping("/personas/editar/{id}")
 public Persona editPersona(@PathVariable Long id,
                            @RequestParam("nombre") String nuevoNombre,
