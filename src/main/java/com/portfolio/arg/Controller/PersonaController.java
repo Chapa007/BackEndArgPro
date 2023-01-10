@@ -18,17 +18,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "mid-virgina-chapa007.koyeb.app")
+@CrossOrigin(origins = "http://localhost:4200")
 public class PersonaController {
     @Autowired IPersonaService IpersonaService;
     
     
-@GetMapping("/personas/traer")
+@GetMapping("personas/traer")
     public List<Persona> getPersona(){
         return IpersonaService.getPersona();
     }
     
-//@PreAuthorize("hasRole('ADMIN')")
+@PreAuthorize("hasRole('ADMIN')")
 @PostMapping("/personas/crear")
 public String createPersona(@RequestBody Persona persona){
     IpersonaService.savePersona(persona);
@@ -60,7 +60,7 @@ public Persona editPersona(@PathVariable Long id,
 
 @GetMapping("/personas/traer/perfil")
 public Persona findPersona(){
-    return IpersonaService.findPersona((long)1);
+    return IpersonaService.findPersona((long)4);
 }
    
 }
