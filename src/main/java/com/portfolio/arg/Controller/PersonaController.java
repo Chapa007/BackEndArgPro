@@ -60,7 +60,7 @@ public Persona editPersona(@PathVariable Long id,
 
 @GetMapping("/personas/traer/perfil")
 public Persona findPersona(){
-    return IpersonaService.findPersona((long)4);
+    return IpersonaService.findPersona((long)1);
 }
    
 }
