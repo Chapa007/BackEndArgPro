@@ -27,3 +27,25 @@ public class WebConfig implements WebMvcConfigurer {
    
 
 }
+/*
+package com.portfolio.arg;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import javax.swing.JOptionPane;
+
+
+public class WebConfig{
+    Connection connect = null;
+     public Connection conexion()
+     {
+     try{
+            Class.forName("org.gjt.mm.mysql.Driver");
+             connect = DriverManager.getConnection("jdbc:mysql://localhost/backendarg", "root","");
+     } catch (Exception e) {
+         JOptionPane.showMessageDialog(null,"Error " );
+     }
+     return connect; 
+     }
+}
+*/

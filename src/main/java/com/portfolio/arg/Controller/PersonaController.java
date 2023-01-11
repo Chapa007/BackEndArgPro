@@ -1,5 +1,6 @@
 package com.portfolio.arg.Controller;
 
+
 import com.portfolio.arg.Entity.Persona;
 import com.portfolio.arg.Interface.IPersonaService;
 import java.util.List;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+//@CrossOrigin(origins = "http://localhost:4200")
 @CrossOrigin(origins = "https://argprograma-93cad.web.app")
 public class PersonaController {
     @Autowired IPersonaService IpersonaService;
