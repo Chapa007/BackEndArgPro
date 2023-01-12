@@ -9,6 +9,10 @@ import javax.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ *
+ * @author lucad
+ */
 
 @Getter
 @Setter

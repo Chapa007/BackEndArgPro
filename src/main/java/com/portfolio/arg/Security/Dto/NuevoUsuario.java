@@ -2,6 +2,10 @@ package com.portfolio.arg.Security.Dto;
 
 import java.util.HashSet;
 import java.util.Set;
+/**
+ *
+ * @author lucad
+ */
 
 
 public class NuevoUsuario {

@@ -1,6 +1,10 @@
 package com.portfolio.arg.Security.Dto;
 
 import javax.validation.constraints.NotBlank;
+/**
+ *
+ * @author lucad
+ */
 
 
 public class LoginUsuario {

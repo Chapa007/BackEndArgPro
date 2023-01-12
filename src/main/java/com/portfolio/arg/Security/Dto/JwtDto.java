@@ -2,6 +2,10 @@ package com.portfolio.arg.Security.Dto;
 
 import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
+/**
+ *
+ * @author lucad
+ */
 
 
 public class JwtDto {
